@@ -7,11 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries API Display</title>
 </head>
+<style>
+    #all-countries {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .country {
+        border: 2px solid tomato;
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
 
 <body>
     <h2>All Countries</h2>
     <section>
-        <div id="all-countries"></div>
+        <div id="country-detail">
+
+        </div>
+    </section>
+    <section>
+        <div id="all-countries">
+
+        </div>
     </section>
 
     <script src="js/countries.js"></script>
